@@ -1,0 +1,129 @@
+# Create the HTML file and provide it for download
+
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Thulasi Mani</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Comfortaa', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            line-height: 1.8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            text-align: left;
+        }
+        .section h2 {
+            text-align: center;
+            color: #ff69b4;
+        }
+        .profile-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Subheading.png" alt="Profile Image" class="profile-image">
+        
+        <div class="section"><h2>About Me 🌸</h2>
+            <p>A Cloud Support Engineer passionate about optimizing cloud infrastructures and ensuring seamless web performance.</p>
+        </div>
+        <div class="section"><h2>Technical Skills 🛠</h2>
+            <p>Networking & Security | Cloud Platforms | Akamai Technologies | Backup Administration | Operating Systems & CMS | Automation | Productivity Tools</p>
+        </div>
+        <div class="section"><h2>Work Experience 👨‍💼</h2>
+            <h3>Custom Software Analyst, Accenture</h3>
+            <p>September 2022 - Present</p>
+            <ul>
+                <li>Provided exceptional support for complex and urgent technical issues.</li>
+                <li>Managed Akamai CDN migrations and optimizations.</li>
+                <li>Collaborated with multi-functional teams to troubleshoot technical issues.</li>
+            </ul>
+        </div>
+        <div class="section"><h2>Education 📚</h2>
+            <h3><a href="https://www.srmvalliammai.ac.in/" target="_blank">SRM Valliammai Engineering College</a></h3>
+            <p>Bachelor of Electronics and Communication Engineering (2019 - 2022)</p>
+            <h3><a href="https://www.shiksha.com/college/valliammai-polytechnic-college-kanchipuram-148237/courses" target="_blank">Valliammai Polytechnic College, Chennai</a></h3>
+            <p>Diploma in Electronics and Communication Engineering (2017 - 2019)</p>
+        </div>
+        
+        <div class="section">
+            <h2>Projects 💼</h2>
+            <p>Here are some key projects I have worked on, focusing on cloud optimization, web performance, and automation solutions.</p>
+            <div class="projects">
+                <div class="project">
+                    <h3>Unilever Web Estate & Cloud Optimization</h3>
+                    <p>Designed and optimized the cloud infrastructure for Unilever's global web estate. Improved website performance and security through Akamai CDN, WAF implementation, and automated monitoring solutions.</p>
+                    <a href="project.html" class="know-more">Know More</a>
+                </div>
+                <div class="project">
+                    <h3>Unilever Q-Core Chatbot</h3>
+                    <p>Supported the infrastructure for Unilever's Q-Core Chatbot, ensuring smooth deployment, performance monitoring, and troubleshooting.</p>
+                    <a href="project.html" class="know-more">Know More</a>
+                </div>
+            </div>
+        </div>
+        
+ <div class="section"><h2>Certifications 🎓</h2>
+    <ul>
+        <li>
+            <a href="https://drive.google.com/file/d/1dM61gjUpuyi4WAl3qnf216OsTCdYwcW1/view" target="_blank">
+                Akamai Web Performance and Offload (Akamai)
+            </a>  
+            - Learned content caching, performance optimization, and offloading traffic using Akamai CDN.
+        </li>
+        <li>
+            <a href="https://drive.google.com/file/d/12F7-LyISJfkUJsrQZIdJlO7gqneiimDk/view" target="_blank">
+                Akamai Web Application and API Protection (Akamai)
+            </a>  
+            - Gained expertise in WAF configuration, bot mitigation, and securing APIs from cyber threats.
+        </li>
+        <li>
+            <a href="https://drive.google.com/file/d/1tKF36sykVmhmga6Urs4qUJ367l4B9L8-/view" target="_blank">
+                Cisco Certified Network Associate (Udemy)
+            </a>  
+            - Acquired knowledge of networking fundamentals, routing, switching, and network security principles.
+        </li>
+        <li>
+            <a href="https://drive.google.com/file/d/1Mv8-3MAvv8qbN4gbav9xQzz_GfCRZnM_/view" target="_blank">
+                Commvault Backup Administration and Restoration (Udemy)
+            </a>  
+            - Learned data backup strategies, disaster recovery planning, and data restoration using Commvault.
+        </li>
+        <li>
+            <a href="https://drive.google.com/file/d/1X3s1j7Rf-_Gc7piX7fSfANOt6nWaFvVr/view" target="_blank">
+                Microsoft Power BI (Skill Nation)
+            </a>  
+            - Developed skills in data visualization, dashboard creation, and business intelligence analytics.
+        </li>
+        <li>
+            <a href="https://drive.google.com/file/d/1zrSzoFlibcT2SC4iupWQ9EG5HnwExh_S/view" target="_blank">
+                Microsoft PowerPoint (Skill Nation)
+            </a>  
+            - Gained proficiency in creating professional presentations with advanced animations and design techniques.
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>"""
+
+# Save the HTML file
+file_path = "/mnt/data/index.html"
+with open(file_path, "w") as file:
+    file.write(html_content)
+
+file_path
