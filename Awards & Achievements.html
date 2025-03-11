@@ -31,14 +31,16 @@
             border-radius: 10px;
             margin-bottom: 30px;
             display: flex;
-            align-items: center;
-            text-align: left;
+            flex-direction: column; /* Stack image and text vertically */
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center content */
+            text-align: center;
         }
         .award-section img {
-            width: 100px;
+            width: 150px; /* Adjust size as needed */
             height: auto;
             border-radius: 10px;
-            margin-right: 20px;
+            margin-bottom: 15px; /* Space between image and text */
         }
         .award-text {
             flex: 1;
